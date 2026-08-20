@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#090706" />
+  <meta name="description" content="Biswajit Jana — astrophysics, astronomical instrumentation, exoplanets, precision spectroscopy and scientific computing." />
+  <meta name="author" content="Biswajit Jana" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://biswajit1999.github.io/Biswajit/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Biswajit Jana — Research Universe" />
+  <meta property="og:description" content="An interactive research universe connecting precision instrumentation, exoplanets and scientific computing." />
+  <meta property="og:url" content="https://biswajit1999.github.io/Biswajit/" />
+  <title>Biswajit Jana — Research Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-scene="hero">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div id="boot" class="boot" role="status" aria-live="polite">
+    <div class="boot-mark"><i></i><i></i><i></i></div>
+    <p>Mapping research universe</p>
+  </div>
+
+  <canvas id="universe-canvas" aria-hidden="true"></canvas>
+  <div id="label-layer" class="label-layer" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#hero" aria-label="Biswajit Jana — home">
+      <span class="brand-orbit"><i></i></span>
+      <span><b>Biswajit Jana</b><small>Research Universe</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#universe">Universe</a>
+      <a href="#instrumentation">Instrumentation</a>
+      <a href="#exoplanets">Exoplanets</a>
+      <a href="#software">Software</a>
+      <a href="#trajectory">Trajectory</a>
+    </nav>
+    <div class="top-actions">
+      <span id="graph-status" class="graph-status">Graph · loading</span>
+      <button id="motion-toggle" class="icon-btn" type="button" aria-pressed="false" title="Toggle reduced motion">Motion</button>
+    </div>
+  </header>
+
+  <aside class="rail" aria-label="Scene progress">
+    <a href="#hero" data-rail="hero"><span>01</span><i></i><b>Origin</b></a>
+    <a href="#universe" data-rail="universe"><span>02</span><i></i><b>Universe</b></a>
+    <a href="#instrumentation" data-rail="instrumentation"><span>03</span><i></i><b>Instrument</b></a>
+    <a href="#exoplanets" data-rail="exoplanets"><span>04</span><i></i><b>Worlds</b></a>
+    <a href="#software" data-rail="software"><span>05</span><i></i><b>Software</b></a>
+    <a href="#trajectory" data-rail="trajectory"><span>06</span><i></i><b>Trajectory</b></a>
+    <a href="#contact" data-rail="contact"><span>07</span><i></i><b>Contact</b></a>
+  </aside>
+
+  <main id="content">
+    <section id="hero" class="scene scene-hero" data-scene="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Astrophysics · Instrumentation · Scientific Computing</p>
+        <h1>Measure the universe.<br /><em>Control the instrument.</em><br />Understand the signal.</h1>
+        <p class="lede">I work across astronomical instrumentation, closed-loop control, exoplanet science and computational research—connecting hardware, data and physical interpretation.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#universe">Enter research universe <span>↘</span></a>
+          <a class="btn btn-ghost" href="https://biswajit1999.github.io/Biswajit_Jana.github.io/Biswajit%20Jana.pdf" target="_blank" rel="noopener">Academic CV ↗</a>
+        </div>
+        <div class="hero-strip">
+          <div><strong>EXOhSPEC</strong><span>Precision RV instrumentation</span></div>
+          <div><strong>JWST · HST · TESS</strong><span>Exoplanet research</span></div>
+          <div><strong>Python · WebGL · Control</strong><span>Scientific systems</span></div>
+        </div>
+      </div>
+      <p class="scene-caption"><span>01</span> Scroll to travel · Drag the field to orbit</p>
+    </section>
+
+    <section id="universe" class="scene" data-scene="universe">
+      <div class="glass-panel panel-right reveal">
+        <p class="eyebrow"><span></span> Research Universe</p>
+        <h2>Projects become a connected scientific system.</h2>
+        <p>Repository cards are useful. Relationships are more interesting. The 3D field connects projects to instruments, methods, planetary classes and analysis themes so the portfolio can be explored as a research map.</p>
+        <div class="legend">
+          <span data-type="instrument">Instrumentation</span>
+          <span data-type="planet">Exoplanets</span>
+          <span data-type="software">Software</span>
+          <span data-type="research">Research output</span>
+        </div>
+        <div class="panel-rule"></div>
+        <p class="micro">Select a luminous node in the scene to focus the camera and open its research record.</p>
+      </div>
+      <p class="scene-caption scene-caption-right"><span>02</span> Knowledge graph online</p>
+    </section>
+
+    <section id="instrumentation" class="scene" data-scene="instrumentation">
+      <div class="glass-panel reveal">
+        <p class="eyebrow"><span></span> EXOhSPEC · Precision instrumentation</p>
+        <h2>Precision is an active process.</h2>
+        <p>Thermal response, adaptive-optics steering, environmental sensing and detector-plane stability are treated as one control problem rather than separate subsystems.</p>
+        <div class="metrics">
+          <article><strong>0.37 px</strong><span>dY RMS · 44.5 h stability run</span></article>
+          <article><strong>91%</strong><span>frames within ±0.5 px</span></article>
+          <article><strong>84.6 h</strong><span>V17 long-duration run</span></article>
+          <article><strong>R ≈ 70k</strong><span>spectrograph design target</span></article>
+        </div>
+      </div>
+      <div class="telemetry reveal" aria-label="Conceptual EXOhSPEC telemetry">
+        <header><span>EXOHSPEC // CONTROL BUS</span><i></i><b>LOCKED</b></header>
+        <div class="trace"><span>TEC</span><svg viewBox="0 0 260 30" preserveAspectRatio="none"><path d="M0 17 C18 6 34 24 52 13 S90 12 112 16 143 7 164 14 200 8 260 13" /></svg></div>
+        <div class="trace"><span>AO</span><svg viewBox="0 0 260 30" preserveAspectRatio="none"><path d="M0 16 C22 17 35 8 55 17 S91 21 112 13 144 18 168 11 201 18 260 10" /></svg></div>
+        <div class="trace"><span>OPL</span><svg viewBox="0 0 260 30" preserveAspectRatio="none"><path d="M0 17 C31 15 42 19 66 14 S101 16 130 12 166 18 199 13 228 13 260 15" /></svg></div>
+        <footer><span>THERMAL</span><span>AO</span><span>DETECTOR</span><span>ENV</span></footer>
+      </div>
+      <p class="scene-caption"><span>03</span> Camera enters the optical/control architecture</p>
+    </section>
+
+    <section id="exoplanets" class="scene" data-scene="exoplanets">
+      <div class="glass-panel panel-right reveal">
+        <p class="eyebrow"><span></span> Atmospheres · Detection · Public data</p>
+        <h2>From photons to planetary worlds.</h2>
+        <p>Archival observations are turned into quantitative, reproducible analyses: transmission spectra, phase curves, transit models, radial velocities and evidence tests.</p>
+        <div class="planet-grid">
+          <button data-focus="project:wasp-121b-exoplanet-report"><b>WASP-121 b</b><span>JWST phase curve · extreme thermal contrast</span></button>
+          <button data-focus="project:wasp-107b-exoplanet-report"><b>WASP-107 b</b><span>Warm Neptune · atmospheric structure</span></button>
+          <button data-focus="project:hd189733b-exoplanet-report"><b>HD 189733 b</b><span>Transmission spectrum · high-altitude haze</span></button>
+          <button data-focus="project:k2-18b-exoplanet-report"><b>K2-18 b</b><span>Temperate sub-Neptune · atmospheric evidence</span></button>
+        </div>
+      </div>
+      <p class="scene-caption scene-caption-right"><span>04</span> Particle field resolves into orbital families</p>
+    </section>
+
+    <section id="software" class="scene" data-scene="software">
+      <div class="glass-panel reveal">
+        <p class="eyebrow"><span></span> Scientific software · Open research</p>
+        <h2>Research should be inspectable.</h2>
+        <p>Controllers, analysis pipelines, interactive laboratories and report repositories form the computational layer beneath the scientific claims.</p>
+        <div class="terminal">
+          <header><span>research_universe.py</span><b>● live</b></header>
+          <pre><code>universe.connect("EXOhSPEC", "closed_loop_control")
+universe.connect("JWST", "atmospheres")
+universe.connect("TESS", "transit_models")
+universe.connect("AETHER", "visual_computing")
+universe.render(evidence=True, reproducible=True)</code></pre>
+        </div>
+      </div>
+      <p class="scene-caption"><span>05</span> Constellations reorganise into a computational lattice</p>
+    </section>
+
+    <section id="trajectory" class="scene" data-scene="trajectory">
+      <div class="glass-panel panel-right reveal">
+        <p class="eyebrow"><span></span> Research trajectory</p>
+        <h2>Engineering → astrophysics → precision measurement.</h2>
+        <div class="timeline">
+          <article><time>2017–21</time><div><b>Electronics & communication</b><p>Embedded systems, visible-light communication and instrumentation foundations.</p></div></article>
+          <article><time>2023–24</time><div><b>MSc Astrophysics</b><p>Exoplanets, spectroscopy and advanced research at the University of Hertfordshire.</p></div></article>
+          <article><time>2024–26</time><div><b>EXOhSPEC development</b><p>Closed-loop thermal/AO stabilisation, environmental response and detector-position control.</p></div></article>
+          <article><time>Now</time><div><b>Integrated research portfolio</b><p>Instrumentation, exoplanet analysis and scientific software developed as one coherent programme.</p></div></article>
+        </div>
+      </div>
+      <p class="scene-caption scene-caption-right"><span>06</span> Network collapses into a research trajectory</p>
+    </section>
+
+    <section id="contact" class="scene scene-contact" data-scene="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow"><span></span> Research · Collaboration · PhD</p>
+        <h2>Build the next precise instrument.<br /><em>Measure the next world.</em></h2>
+        <p>Interested in astronomical instrumentation, precision spectroscopy, exoplanets, closed-loop control and computational research.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:biswajitj998@gmail.com">Get in touch ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/Biswajit1999" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://biswajit1999.github.io/Biswajit_Jana.github.io/" target="_blank" rel="noopener">Classic portfolio ↗</a>
+        </div>
+      </div>
+      <footer class="site-footer"><span>Biswajit Jana</span><span>Research Universe · 2026</span></footer>
+    </section>
+  </main>
+
+  <aside id="node-panel" class="node-panel" hidden aria-live="polite">
+    <button id="node-close" type="button" aria-label="Close project detail">×</button>
+    <p id="node-kicker" class="node-kicker"></p>
+    <h3 id="node-title"></h3>
+    <p id="node-text"></p>
+    <div class="node-actions">
+      <a id="node-live" href="#" target="_blank" rel="noopener" hidden>Open live project ↗</a>
+      <a id="node-link" href="#" target="_blank" rel="noopener" hidden>GitHub ↗</a>
+    </div>
+  </aside>
+
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
