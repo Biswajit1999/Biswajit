@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme-observatory.css" />
 </head>
 <body data-scene="hero">
   <a class="skip-link" href="#content">Skip to content</a>
@@ -41,6 +42,7 @@
       <a href="#instrumentation">Instrumentation</a>
       <a href="#exoplanets">Exoplanets</a>
       <a href="#software">Software</a>
+      <a href="#evidence">Evidence</a>
       <a href="#trajectory">Trajectory</a>
     </nav>
     <div class="top-actions">
@@ -55,8 +57,9 @@
     <a href="#instrumentation" data-rail="instrumentation"><span>03</span><i></i><b>Instrument</b></a>
     <a href="#exoplanets" data-rail="exoplanets"><span>04</span><i></i><b>Worlds</b></a>
     <a href="#software" data-rail="software"><span>05</span><i></i><b>Software</b></a>
-    <a href="#trajectory" data-rail="trajectory"><span>06</span><i></i><b>Trajectory</b></a>
-    <a href="#contact" data-rail="contact"><span>07</span><i></i><b>Contact</b></a>
+    <a href="#evidence" data-rail="evidence"><span>06</span><i></i><b>Evidence</b></a>
+    <a href="#trajectory" data-rail="trajectory"><span>07</span><i></i><b>Trajectory</b></a>
+    <a href="#contact" data-rail="contact"><span>08</span><i></i><b>Contact</b></a>
   </aside>
 
   <main id="content">
@@ -70,9 +73,9 @@
           <a class="btn btn-ghost" href="https://biswajit1999.github.io/Biswajit_Jana.github.io/Biswajit%20Jana.pdf" target="_blank" rel="noopener">Academic CV ↗</a>
         </div>
         <div class="hero-strip">
-          <div><strong>EXOhSPEC</strong><span>Precision RV instrumentation</span></div>
-          <div><strong>JWST · HST · TESS</strong><span>Exoplanet research</span></div>
-          <div><strong>Python · WebGL · Control</strong><span>Scientific systems</span></div>
+          <div><strong id="project-count">85 projects</strong><span>versioned graph snapshot</span></div>
+          <div><strong id="node-count">182 nodes</strong><span>projects, methods, instruments</span></div>
+          <div><strong id="edge-count">393 typed links</strong><span>inspectable relationships</span></div>
         </div>
       </div>
       <p class="scene-caption"><span>01</span> Scroll to travel · Drag the field to orbit</p>
@@ -82,7 +85,7 @@
       <div class="glass-panel panel-right reveal">
         <p class="eyebrow"><span></span> Research Universe</p>
         <h2>Projects become a connected scientific system.</h2>
-        <p>Repository cards are useful. Relationships are more interesting. The 3D field connects projects to instruments, methods, planetary classes and analysis themes so the portfolio can be explored as a research map.</p>
+        <p>Repository cards are useful, but provenance lives in relationships. This pinned graph connects projects to instruments, methods, planetary classes, molecules and analysis types. Counts come from the checked-in snapshot—not a live marketing total.</p>
         <div class="legend">
           <span data-type="instrument">Instrumentation</span>
           <span data-type="planet">Exoplanets</span>
@@ -90,7 +93,7 @@
           <span data-type="research">Research output</span>
         </div>
         <div class="panel-rule"></div>
-        <p class="micro">Select a luminous node in the scene to focus the camera and open its research record.</p>
+        <p class="micro">Snapshot: 182 nodes, 393 typed edges, including 85 project records. Select a luminous node to open its linked record.</p>
       </div>
       <p class="scene-caption scene-caption-right"><span>02</span> Knowledge graph online</p>
     </section>
@@ -98,17 +101,17 @@
     <section id="instrumentation" class="scene" data-scene="instrumentation">
       <div class="glass-panel reveal">
         <p class="eyebrow"><span></span> EXOhSPEC · Precision instrumentation</p>
-        <h2>Precision is an active process.</h2>
-        <p>Thermal response, adaptive-optics steering, environmental sensing and detector-plane stability are treated as one control problem rather than separate subsystems.</p>
+        <h2>Precision claims need an evidence chain.</h2>
+        <p>EXOhSPEC is represented here as an instrumentation design and control programme. Design targets are not presented as commissioned performance. Quantitative results below link to methods, generated artifacts and declared inference limits.</p>
         <div class="metrics">
-          <article><strong>0.37 px</strong><span>dY RMS · 44.5 h stability run</span></article>
-          <article><strong>91%</strong><span>frames within ±0.5 px</span></article>
-          <article><strong>84.6 h</strong><span>V17 long-duration run</span></article>
-          <article><strong>R ≈ 70k</strong><span>spectrograph design target</span></article>
+          <article><strong>15 scenarios</strong><span>controlled Doppler-information experiment</span><a href="https://github.com/Biswajit1999/eprv-spectrograph-landscape" target="_blank" rel="noopener">Methods and data ↗</a></article>
+          <article><strong>1,000 nulls</strong><span>cadence-specific RV peak calibration</span><a href="https://github.com/Biswajit1999/radial-velocity-detection-method" target="_blank" rel="noopener">Calibration ↗</a></article>
+          <article><strong>12 settings</strong><span>21-cm peak-sensitivity grid</span><a href="https://github.com/Biswajit1999/Hydrogen_21cm_Line_Lab" target="_blank" rel="noopener">Candidate audit ↗</a></article>
+          <article><strong>11 transits</strong><span>event-level HD 189733 b depth estimate</span><a href="https://github.com/Biswajit1999/hd189733b-lightkurve-transit-starter" target="_blank" rel="noopener">Notebook and outputs ↗</a></article>
         </div>
       </div>
-      <div class="telemetry reveal" aria-label="Conceptual EXOhSPEC telemetry">
-        <header><span>EXOHSPEC // CONTROL BUS</span><i></i><b>LOCKED</b></header>
+      <div class="telemetry reveal" aria-label="Conceptual EXOhSPEC control schematic">
+        <header><span>EXOHSPEC // CONTROL CONCEPT</span><i></i><b>MODEL</b></header>
         <div class="trace"><span>TEC</span><svg viewBox="0 0 260 30" preserveAspectRatio="none"><path d="M0 17 C18 6 34 24 52 13 S90 12 112 16 143 7 164 14 200 8 260 13" /></svg></div>
         <div class="trace"><span>AO</span><svg viewBox="0 0 260 30" preserveAspectRatio="none"><path d="M0 16 C22 17 35 8 55 17 S91 21 112 13 144 18 168 11 201 18 260 10" /></svg></div>
         <div class="trace"><span>OPL</span><svg viewBox="0 0 260 30" preserveAspectRatio="none"><path d="M0 17 C31 15 42 19 66 14 S101 16 130 12 166 18 199 13 228 13 260 15" /></svg></div>
@@ -149,6 +152,21 @@ universe.render(evidence=True, reproducible=True)</code></pre>
       <p class="scene-caption"><span>05</span> Constellations reorganise into a computational lattice</p>
     </section>
 
+    <section id="evidence" class="scene" data-scene="evidence">
+      <div class="glass-panel panel-wide reveal">
+        <p class="eyebrow"><span></span> Evidence register · Conditional results</p>
+        <h2>Results are useful only with their boundaries.</h2>
+        <p>Each record names the observation or simulation, the estimator, the uncertainty or sensitivity check, and the assumptions that limit interpretation.</p>
+        <div class="evidence-grid">
+          <article><p class="evidence-tag">TESS · SPOC Sector 41</p><h3>HD 189733 b</h3><strong>2.266%</strong><p>Median depth across 11 locally normalized events; 68% event-bootstrap interval 2.247–2.307%.</p><a href="https://github.com/Biswajit1999/hd189733b-lightkurve-transit-starter/blob/main/METHODS.md" target="_blank" rel="noopener">Read inference boundary ↗</a></article>
+          <article><p class="evidence-tag">Synthetic RV · fixed cadence</p><h3>Recovery calibration</h3><strong>35 / 100</strong><p>Recovery at K = 1.5 m/s; 100/100 from K = 3 m/s under the declared joint power-and-period rule.</p><a href="https://github.com/Biswajit1999/radial-velocity-detection-method" target="_blank" rel="noopener">Inspect experiment ↗</a></article>
+          <article><p class="evidence-tag">LAB survey · 73 sightlines</p><h3>21-cm candidates</h3><strong>290 / 356</strong><p>Baseline local maxima persisting across all 12 detector settings; not a cloud or spiral-arm catalogue.</p><a href="https://github.com/Biswajit1999/Hydrogen_21cm_Line_Lab" target="_blank" rel="noopener">Inspect sensitivity grid ↗</a></article>
+        </div>
+        <p class="micro evidence-note">Portfolio records are research software and reproducible analyses unless a linked record explicitly identifies a peer-reviewed publication. Absence of a linked uncertainty or sensitivity analysis is not evidence of scientific validation.</p>
+      </div>
+      <p class="scene-caption"><span>06</span> Claims resolve into datasets, estimators and limits</p>
+    </section>
+
     <section id="trajectory" class="scene" data-scene="trajectory">
       <div class="glass-panel panel-right reveal">
         <p class="eyebrow"><span></span> Research trajectory</p>
@@ -156,11 +174,11 @@ universe.render(evidence=True, reproducible=True)</code></pre>
         <div class="timeline">
           <article><time>2017–21</time><div><b>Electronics & communication</b><p>Embedded systems, visible-light communication and instrumentation foundations.</p></div></article>
           <article><time>2023–24</time><div><b>MSc Astrophysics</b><p>Exoplanets, spectroscopy and advanced research at the University of Hertfordshire.</p></div></article>
-          <article><time>2024–26</time><div><b>EXOhSPEC development</b><p>Closed-loop thermal/AO stabilisation, environmental response and detector-position control.</p></div></article>
+          <article><time>2024–26</time><div><b>EXOhSPEC design studies</b><p>Control-architecture studies spanning thermal response, adaptive-optics steering, environmental sensing and detector position.</p></div></article>
           <article><time>Now</time><div><b>Integrated research portfolio</b><p>Instrumentation, exoplanet analysis and scientific software developed as one coherent programme.</p></div></article>
         </div>
       </div>
-      <p class="scene-caption scene-caption-right"><span>06</span> Network collapses into a research trajectory</p>
+      <p class="scene-caption scene-caption-right"><span>07</span> Network collapses into a research trajectory</p>
     </section>
 
     <section id="contact" class="scene scene-contact" data-scene="contact">
@@ -174,7 +192,7 @@ universe.render(evidence=True, reproducible=True)</code></pre>
           <a class="btn btn-ghost" href="https://biswajit1999.github.io/Biswajit_Jana.github.io/" target="_blank" rel="noopener">Classic portfolio ↗</a>
         </div>
       </div>
-      <footer class="site-footer"><span>Biswajit Jana</span><span>Research Universe · 2026</span></footer>
+      <footer class="site-footer"><span>Biswajit Jana</span><span>Evidence snapshot · 26 September 2026</span></footer>
     </section>
   </main>
 

@@ -54,6 +54,8 @@ body{
   box-shadow:0 28px 95px rgba(0,7,20,.38),inset 0 1px 0 rgba(160,195,255,.025);
 }
 .metrics article{background:rgba(7,15,30,.86)}
+.metrics article a{display:inline-block;margin-top:10px;font-family:"DM Mono",monospace;font-size:.58rem;color:var(--cyan);text-transform:uppercase;letter-spacing:.06em}
+.metrics article a:hover,.metrics article a:focus-visible{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .telemetry{background:rgba(5,11,24,.78);box-shadow:0 28px 90px rgba(0,6,20,.42)}
 .trace path{filter:drop-shadow(0 0 3px rgba(111,155,255,.25))}
 .trace:nth-of-type(2) path{filter:drop-shadow(0 0 3px rgba(47,208,194,.22))}
@@ -64,8 +66,21 @@ body{
 .terminal code{color:#c9d8ef}
 .node-panel{background:rgba(6,13,27,.93);box-shadow:0 30px 110px rgba(0,5,18,.56)}
 .progress span{background:linear-gradient(90deg,var(--rust),var(--amber),var(--cyan))}
+.panel-wide{width:min(1120px,88vw);margin-inline:auto}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px}
+.evidence-grid article{display:flex;flex-direction:column;min-height:270px;padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(7,15,30,.72)}
+.evidence-grid h3{font-size:1.15rem;margin:4px 0 18px}
+.evidence-grid strong{font-family:Syne,sans-serif;font-size:2.2rem;color:var(--cyan)}
+.evidence-grid article>p:not(.evidence-tag){font-size:.82rem;line-height:1.6;color:var(--soft)}
+.evidence-tag{margin:0;font-family:"DM Mono",monospace;font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.evidence-grid a{margin-top:auto;font-family:"DM Mono",monospace;font-size:.61rem;color:var(--amber)}
+.evidence-grid a:hover,.evidence-grid a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.evidence-note{margin-top:20px!important;max-width:100ch!important}
 ::selection{background:rgba(111,155,255,.28);color:#fff}
 
 @media(max-width:820px){
   .glass-panel{background:rgba(7,15,30,.82)}
+  .panel-wide{width:100%}
+  .evidence-grid{grid-template-columns:1fr}
+  .evidence-grid article{min-height:0}
 }
