@@ -7,7 +7,11 @@ const app = fs.readFileSync('app.js', 'utf8');
 const graphBytes = fs.readFileSync('data/research-graph.json');
 const graph = JSON.parse(graphBytes);
 const provenance = JSON.parse(fs.readFileSync('data/provenance.json', 'utf8'));
-const digest = crypto.createHash('sha256').update(graphBytes).digest('hex');
+const canonicalGraphBytes = Buffer.from(
+  graphBytes.toString('utf8').replaceAll('\r\n', '\n'),
+  'utf8',
+);
+const digest = crypto.createHash('sha256').update(canonicalGraphBytes).digest('hex');
 
 const projectCount = graph.nodes.filter((node) => node.type === 'Project').length;
 if (graph.nodes.length !== 182 || graph.edges.length !== 393 || projectCount !== 85) {

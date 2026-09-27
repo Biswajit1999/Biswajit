@@ -10,12 +10,13 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
 GRAPH = ROOT / "data" / "research-graph.json"
 EXPECTED_GRAPH_SHA256 = (
-    "990d2b5c88a1de74e1184590877dcecd09f3a1a9dc7858ac3c3c6a3a044dc2e7"
+    "fed48ff1f7ad78a346c805492f17b7dd74f57ba3268a8bee2aae94c6f751ce0d"
 )
 
 
 def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    canonical_bytes = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(canonical_bytes).hexdigest()
 
 
 graph = json.loads(GRAPH.read_text(encoding="utf-8"))

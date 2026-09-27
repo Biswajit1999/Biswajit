@@ -8,8 +8,10 @@ project has passed peer review.
 
 The deployed graph is a checked-in snapshot containing 182 nodes and 393 typed
 edges, including 85 project records. Its exact source commit and SHA-256 digest
-are recorded in `data/provenance.json`. The build fails if the graph digest or
-declared counts change without a deliberate provenance update.
+are recorded in `data/provenance.json`. The digest is calculated after
+normalizing CRLF to LF so it is stable across operating systems. The build
+fails if the graph digest or declared counts change without a deliberate
+provenance update.
 
 Graph edges encode curated portfolio relationships such as “uses instrument”
 or “uses method.” They support discovery and navigation; they do not establish
