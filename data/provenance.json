@@ -1,0 +1,11 @@
+{
+  "snapshot_date": "2026-09-26",
+  "source_repository": "https://github.com/Biswajit1999/Biswajit_Jana.github.io",
+  "source_commit": "f5dd01507620cd5fdcab5d2db787c29ea52f4be7",
+  "source_path": "data/research-graph.json",
+  "sha256": "990d2b5c88a1de74e1184590877dcecd09f3a1a9dc7858ac3c3c6a3a044dc2e7",
+  "node_count": 182,
+  "edge_count": 393,
+  "project_count": 85,
+  "scope": "Portfolio navigation graph; relationships are curated metadata, not independent scientific evidence."
+}
